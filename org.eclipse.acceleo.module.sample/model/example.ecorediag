@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_fDobwAatEeWzG96Y-eqD8Q" type="EcoreTools" name="example.ecorediag" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_fD9L4AatEeWzG96Y-eqD8Q" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_fEewUAatEeWzG96Y-eqD8Q" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_fEglgAatEeWzG96Y-eqD8Q" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_fEhzoAatEeWzG96Y-eqD8Q" type="2001">
+        <element xmi:type="ecore:EAttribute" href="example.ecore#//SurvEpidemio/CenTre"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_fEiasAatEeWzG96Y-eqD8Q"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_fEiasQatEeWzG96Y-eqD8Q" type="2001">
+        <element xmi:type="ecore:EAttribute" href="example.ecore#//SurvEpidemio/description"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_fEiasgatEeWzG96Y-eqD8Q"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_fEglgQatEeWzG96Y-eqD8Q"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_fEglggatEeWzG96Y-eqD8Q"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_fEglgwatEeWzG96Y-eqD8Q"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_fEhMkAatEeWzG96Y-eqD8Q" type="5002">
+      <children xmi:type="notation:Node" xmi:id="_fEjo0AatEeWzG96Y-eqD8Q" type="2002">
+        <element xmi:type="ecore:EOperation" href="example.ecore#//SurvEpidemio/operation1"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_fEjo0QatEeWzG96Y-eqD8Q"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_fEk28AatEeWzG96Y-eqD8Q" type="2002">
+        <element xmi:type="ecore:EOperation" href="example.ecore#//SurvEpidemio/operation2"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_fEk28QatEeWzG96Y-eqD8Q"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_fEhMkQatEeWzG96Y-eqD8Q"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_fEhMkgatEeWzG96Y-eqD8Q"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_fEhMkwatEeWzG96Y-eqD8Q"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_fD9L4QatEeWzG96Y-eqD8Q" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="example.ecore#//SurvEpidemio"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fD9L4gatEeWzG96Y-eqD8Q" x="220" y="20"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_G87pAAeTEeWdk6AOcE53Sg" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_G8-FQAeTEeWdk6AOcE53Sg" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_G8-sUAeTEeWdk6AOcE53Sg" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_JeHMUAeTEeWdk6AOcE53Sg" type="2001">
+        <element xmi:type="ecore:EAttribute" href="example.ecore#//Maladie/nomMaladie"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_JeHMUQeTEeWdk6AOcE53Sg"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_MNmRYAeTEeWdk6AOcE53Sg" type="2001">
+        <element xmi:type="ecore:EAttribute" href="example.ecore#//Maladie/descriptionMaladie"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_MNmRYQeTEeWdk6AOcE53Sg"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_G8-sUQeTEeWdk6AOcE53Sg"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G8-sUgeTEeWdk6AOcE53Sg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G8-sUweTEeWdk6AOcE53Sg"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_G8_TYAeTEeWdk6AOcE53Sg" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_G8_TYQeTEeWdk6AOcE53Sg"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_G8_TYgeTEeWdk6AOcE53Sg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_G8_TYweTEeWdk6AOcE53Sg"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_G87pAQeTEeWdk6AOcE53Sg" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="example.ecore#//Maladie"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G87pAgeTEeWdk6AOcE53Sg" x="123" y="214"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_fDobwQatEeWzG96Y-eqD8Q"/>
+  <element xmi:type="ecore:EPackage" href="example.ecore#/"/>
+</notation:Diagram>

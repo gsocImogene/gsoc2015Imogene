@@ -1,0 +1,26 @@
+Cet exemple est un exemple de projet avec Eclipse Kepler et Acceleo 3
+Dans ce projet, nous avons pris en compte 3 types de metamodèles : 
+1- Ecore : nous avons crée un métamodèle Ecore et à partir de celui-ci, nous avons crée un modèle 
+que nous avons utilisé pour générer du code.
+2- UML : Comme dans le point 1, nous avons également un modèle UML que nous utilisons pour générer
+du code JAVA.
+3- Imogene : Idem aux points 1 et 2 le modèle imog du répertoire model permet de générer du code 
+à partir d'un modèle imog
+
+Installations
+-------------
+- Nous avons utilisé Eclipse Modeling Kepler et installé acceleo à partir de Help->Install Modeling
+Component
+- L'avantage ici, est le fait que Eclipse Modeling vient avec pas mal d'outils de modélisations,
+ce qui nous épargne de pas mal de bogues.
+- Nous avons également installé le plug-in imogene de Eclipse pour qu'il puisse prendre en compte 
+les modèles imogene.
+
+Tests des exemples
+------------------
+
+- Une fois les exemples importés dans Eclipse (clic droit dans package explorer -> import -> project 
+from workspace -> choisir le projet et importer)
+- Aller dans Run -> Run configuration -> mettre les informations sur le modèle (voir exemple avec 
+runConfig.png)
+- Cliquer sur run et les sources sont dans le dossier src-gen
