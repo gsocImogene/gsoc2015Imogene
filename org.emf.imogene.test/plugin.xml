@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ImogeneModel -->
+      <package
+            uri="http://www.i-mogene.org/imogene/1.0"
+            class="core.CorePackage"
+            genModel="model/ImogeneModel.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated ImogeneModel -->
+      <parser
+            type="core"
+            class="core.util.CoreResourceFactoryImpl"/>
+   </extension>
+
+</plugin>
