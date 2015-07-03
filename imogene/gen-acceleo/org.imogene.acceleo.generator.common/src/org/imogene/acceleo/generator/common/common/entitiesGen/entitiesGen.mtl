@@ -1,0 +1,163 @@
+[comment encoding = UTF-8 /]
+[module entitiesGen('http://www.i-mogene.org/imogene/1.0')/]
+
+[template public entitiesGen(project : Project)]
+[for (cardEntity : CardEntity | project.entities)]
+[file ('/src/org/imogene/entities/'.concat(cardEntity.name).concat('.java'), false, 'UTF-8')]
+package org.imogene.entities;
+import java.util.*;
+import java.sql.Time;
+import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
+
+public class [cardEntity.name.toUpperFirst()/] extends AbstractEntity {
+	private static final long serialVersionUID = 1L;
+	//Entity attributes
+	[for (fields : FieldEntity | cardEntity.groups.fields)]
+		[if (fields.oclIsKindOf(BooleanField))]
+		private boolean [fields.name.toLowerFirst()/];
+		[/if]
+		[if (fields.oclIsKindOf(IntegerField))]
+		private int [fields.name.toLowerFirst()/];
+		[/if]
+		[if (fields.oclIsKindOf(FloatField))]
+		private float [fields.name.toLowerFirst()/];
+		[/if]
+		[if (fields.oclIsKindOf(TextField))]
+		private String [fields.name.toLowerFirst()/];
+		[/if]
+		[if (fields.oclIsKindOf(DateField))]
+		private Date [fields.name.toLowerFirst()/];
+		[/if]
+		[if (fields.oclIsKindOf(DateTimeField))]
+		private Date [fields.name.toLowerFirst()/];
+		[/if]
+		[if (fields.oclIsKindOf(TimeField))]
+		private Time [fields.name.toLowerFirst()/];
+		[/if]
+	[/for]
+	// constructeur par défaut
+	public [cardEntity.name.toUpperFirst().toUpperFirst()/]() {
+	}
+
+
+	// toString
+	public String toString() {
+		return String.format("[cardEntity.name.toUpperFirst().toUpperFirst()/]['['/]%s, %s[']'/]", id, version);
+	}
+
+	[comment]// getters
+	[for (field : FieldEntity | cardEntity.groups.fields)]
+		public [newFieldEntityTemplate()/] get[field.name.toUpperFirst()/]() {
+			return [field.name/];
+		}
+	[/for]
+
+	//Setter
+	[for (field : FieldEntity | cardEntity.groups.fields)]
+		public void set[field.name.toUpperFirst()/]([newFieldEntityTemplate()/]) {
+			this.[field.name/] = [field.name/];
+		}
+	[/for][/comment]
+}
+[/file]
+[/for]
+[/template]
+
+[template public returnFieldEntityTemplate (fields : FieldEntity) ]
+		[if (fields.oclIsKindOf(BooleanField))]
+		boolean
+		[/if]
+		[if (fields.oclIsKindOf(NumericField))]
+		int
+		[/if]
+		[if (fields.oclIsKindOf(IntegerField))]
+		int 
+		[/if]
+		[if (fields.oclIsKindOf(FloatField))]
+		float
+		[/if]
+		[if (fields.oclIsKindOf(StringField))]
+		String
+		[/if]
+		[if (fields.oclIsKindOf(TextField))]
+		String
+		[/if]
+		[if (fields.oclIsKindOf(TextAreaField))]
+		String
+		[/if]
+		[if (fields.oclIsKindOf(DatesField))]
+		Date
+		[/if]
+		[if (fields.oclIsKindOf(DateField))]
+		Date
+		[/if]
+		[if (fields.oclIsKindOf(DateTimeField))]
+		Date
+		[/if]
+		[if (fields.oclIsKindOf(TimeField))]
+		Time
+		[/if]
+		[if (fields.oclIsKindOf(Boolean))]
+		bool
+		[/if]
+		[if (fields.oclIsKindOf(Integer))]
+		int
+		[/if]
+		[if (fields.oclIsKindOf(Real))]
+		double
+		[/if]
+		[if (fields.oclIsKindOf(String))]
+		String
+		[/if]
+[/template]
+
+
+
+[template public newFieldEntityTemplate (fields : FieldEntity) ]
+		[if (fields.oclIsKindOf(BooleanField))]
+			boolean [fields.name.toLowerFirst()/]
+		[/if]
+		[if (fields.oclIsKindOf(NumericField))]
+			int [fields.name.toLowerFirst()/]
+		[/if]
+		[if (fields.oclIsKindOf(IntegerField))]
+			int [fields.name.toLowerFirst()/]
+		[/if]
+		[if (fields.oclIsKindOf(FloatField))]
+			float [fields.name.toLowerFirst()/]
+		[/if]
+		[if (fields.oclIsKindOf(StringField))]
+			String [fields.name.toLowerFirst()/]
+		[/if]
+		[if (fields.oclIsKindOf(TextField))]
+			String [fields.name.toLowerFirst()/]
+		[/if]
+		[if (fields.oclIsKindOf(TextAreaField))]
+			String [fields.name.toLowerFirst()/]
+		[/if]
+		[if (fields.oclIsKindOf(DatesField))]
+			Date [fields.name.toLowerFirst()/]
+		[/if]
+		[if (fields.oclIsKindOf(DateField))]
+			Date [fields.name.toLowerFirst()/]
+		[/if]
+		[if (fields.oclIsKindOf(DateTimeField))]
+			Date [fields.name.toLowerFirst()/]
+		[/if]
+		[if (fields.oclIsKindOf(TimeField))]
+			Time [fields.name.toLowerFirst()/]
+		[/if]
+		[if (fields.oclIsKindOf(Boolean))]
+			bool [fields.name.toLowerFirst()/]
+		[/if]
+		[if (fields.oclIsKindOf(Integer))]
+			int [fields.name.toLowerFirst()/]
+		[/if]
+		[if (fields.oclIsKindOf(Real))]
+			double [fields.name.toLowerFirst()/]
+		[/if]
+		[if (fields.oclIsKindOf(String))]
+			String [fields.name.toLowerFirst()/]
+		[/if]
+[/template]

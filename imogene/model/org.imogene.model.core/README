@@ -1,0 +1,4 @@
+Ce fichier docummente les modifications que j'ai apporté à ce projet :
+
+1- Modification de la valeur  par defaut GeoType de GeoFiel -> Nothing
+2- Modification de la valeur par défaut PhoneType de PhoneField à MobileNumber

@@ -1,0 +1,16 @@
+[comment encoding = UTF-8 /]
+[module workflow('http://www.i-mogene.org/imogene/1.0')]
+
+[import org::imogene::acceleo::generator::common::common::pomGen /]
+[import org::imogene::acceleo::generator::common::common::entitiesGen::entitiesGen /]
+[import org::imogene::acceleo::generator::common::common::entitiesGen::abstractEntity /]
+
+
+[template public workflow(aProject : Project)]
+
+	[comment @main/]
+	[pomGen()/]
+	[abstractEntity()/]
+	[entitiesGen()/]
+
+[/template]

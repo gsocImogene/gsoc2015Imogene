@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IProject"
+            id="org.imogene.acceleo.contrib.contribution1">
+         <menu
+               label="Imogene"
+               path="additions"
+               id="org.imogene.acceleo.contrib.imogene">
+            <separator
+                  name="imogene">
+            </separator>
+         </menu>
+         <action
+               label="Dao Generation"
+               class="org.imogene.acceleo.contrib.popup.actions.DaoGen"
+               menubarPath="org.imogene.acceleo.contrib.imogene/imogene"
+               enablesFor="1"
+               id="org.imogene.acceleo.contrib.daoGenAction">
+         </action>
+         <action
+               class="org.imogene.acceleo.contrib.popup.actions.WebAppGen"
+               id="org.imogene.acceleo.contrib.webAppGenAction"
+               label="Web application generation"
+               menubarPath="org.imogene.acceleo.contrib.imogene/imogene">
+         </action>
+         <action
+               class="org.imogene.acceleo.contrib.popup.actions.MobileAppGenAction"
+               id="org.imogene.acceleo.contrib.mobileAppGenAction"
+               label="Mobile application generation"
+               menubarPath="org.imogene.acceleo.contrib.imogene/imogene">
+         </action>
+         <action
+               class="org.imogene.acceleo.contrib.popup.actions.OflineClientGenAction"
+               id="org.imogene.acceleo.contrib.oflineClientGenAction"
+               label="Ofline client generation"
+               menubarPath="org.imogene.acceleo.contrib.imogene/imogene">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
