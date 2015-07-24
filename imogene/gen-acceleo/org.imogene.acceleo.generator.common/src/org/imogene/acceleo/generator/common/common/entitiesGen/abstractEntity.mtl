@@ -1,6 +1,13 @@
 [comment encoding = UTF-8 /]
+[**
+ * This module generate the entity, parrent of all entities. All entities must extends this 
+ * class.
+*/]
 [module abstractEntity('http://www.i-mogene.org/imogene/1.0')/]
 
+[**
+ * This template generate the abstract entity of all other entities
+*/]
 [template public abstractEntity(project : Project)]
 [file ('/src/org/imogene/entities/AbstractEntity.java', false, 'UTF-8')]
 package org.imogene.entities;
